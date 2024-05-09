@@ -1,3 +1,6 @@
+# TODO: this is the Cartpole example from the docs
+#  change this script so it works with our self driving car
+
 import math
 
 import numpy as np
