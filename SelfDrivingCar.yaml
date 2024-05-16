@@ -1,5 +1,5 @@
 # name of the task - this should match the name used in the task mapping dictionary in task_util.py
-name: Cartpole
+name: SelfDrivingCar
 
 # physics engine - only physx is currently supported. This value does not need to be modified.
 physics_engine: ${..physics_engine}
@@ -35,7 +35,7 @@ sim:
   # whether to add a ground plane to the world
   add_ground_plane: True
   # whether to add lighting to the world
-  add_distant_light: False
+  add_distant_light: True
 
   # enable flatcache - this is required for rendering
   use_flatcache: True
@@ -86,7 +86,7 @@ sim:
   # each asset in the task can override physics parameters defined in the scene
   # the name of the asset must match the name of the ArticulationView for the asset in the task
   # additional Articulation and rigid body documentation can be found at https://docs.omniverse.nvidia.com/kit/docs/omni_usd_schema_physics/104.2/class_physx_schema_physx_articulation_a_p_i.html and https://docs.omniverse.nvidia.com/kit/docs/omni_usd_schema_physics/104.2/class_physx_schema_physx_rigid_body_a_p_i.html
-  Cartpole:
+  SelfDrivingCar:
     # a value of -1 means to use the same values defined in the physics scene
     override_usd_defaults: False
     enable_self_collisions: False
